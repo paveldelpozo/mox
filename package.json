@@ -1,0 +1,42 @@
+{
+    "name": "mox",
+    "version": "1.0.0",
+    "description": "A powerful and extensible TypeScript model system with decorators, validation, serialization, and transformation.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": ["dist"],
+    "scripts": {
+        "build": "tsc",
+        "prepare": "npm run build",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "lint": "eslint src --ext .ts",
+        "docs": "typedoc"
+    },
+    "keywords": [
+        "typescript",
+        "model",
+        "decorators",
+        "validation",
+        "serialization",
+        "snake_case",
+        "transform",
+        "typescript-model",
+        "class-validator"
+    ],
+    "author": "Pavel del Pozo Rajas <yosoy@paveldelpozo.es>",
+    "license": "MIT",
+    "dependencies": {
+        "class-validator": "^0.14.0",
+        "reflect-metadata": "^0.1.13"
+    },
+    "devDependencies": {
+        "eslint": "^9.26.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "typescript": "^5.3.3",
+        "typedoc": "^0.25.2",
+        "typedoc-plugin-markdown": "^3.14.0",
+        "vitest": "^0.34.6"
+    }
+}
